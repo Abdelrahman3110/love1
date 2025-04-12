@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css\style.css"/>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css\normalize.css"/>
+    <!-- font awesome library -->
+    <link rel="stylesheet" href=" css\all.min.css"/>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google arabic font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rakkas&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start header -->
+ <div class="header">
+    <div class="container">
+        <img src="imgs/Screenshot 2025-04-12 134634.png" class="logo" alt="">
+        <div class="links">
+            <span class="icon">
+             <span></span>
+             <span></span>
+             <span></span>
+            </span>
+            <ul>
+                <li><a href="#Timer">Timer</a></li>
+                <li><a href="#future">future</a></li>
+                <li><a href="#Remember">Remember</a></li>
+                <li><a href="#Finally">Finally</a></li>
+            </ul>
+        </div>
+    </div>
+ </div>
+<!-- end header -->
+ <!-- start landing section -->
+ <div class="landing">
+    <div class="intro-text">
+        <h1>
+            Mariam
+        </h1>
+        <p>
+            This page was made with all love for you, only you
+        </p>
+    </div>
+  </div>
+ <!-- end landing section -->
+  <!-- start timer -->
+  <div class="timer">
+    <div class="timer-t" id="Timer">
+        <div class="container">
+            <h2 class="special-heading-t">timer</h2>
+            <p>Time Since Feb 18, 2025</p>
+            <div class="counter">
+                <div class="counter-item">
+                    <div class="counter-value" id="days">0</div>
+                    <div class="counter-label">Days</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="hours">0</div>
+                    <div class="counter-label">Hours</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="minutes">0</div>
+                    <div class="counter-label">Minutes</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="seconds">0</div>
+                    <div class="counter-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <script>
+ // Start date: February 18, 2025
+ const startDate = new Date('2025-02-18T00:00:00');
+        
+ function updateCounter() {
+     const now = new Date();
+     const diff = now - startDate;
+     
+     // Calculate time units
+     const seconds = Math.floor(diff / 1000);
+     const minutes = Math.floor(seconds / 60);
+     const hours = Math.floor(minutes / 60);
+     const days = Math.floor(hours / 24);
+     
+     // Update values on the page
+     document.getElementById('days').textContent = days;
+     document.getElementById('hours').textContent = hours % 24;
+     document.getElementById('minutes').textContent = minutes % 60;
+     document.getElementById('seconds').textContent = seconds % 60;
+ }
+ 
+ // Update counter every second
+ setInterval(updateCounter, 1000);
+ updateCounter(); // Initial run
+</script>
+
+  <!-- end timer -->
+   <!-- moments start -->
+   <div class="services" id="Moments">
+    <div class="container">
+        <h2 class="special-heading-m">Moments</h2>
+        <p>you are in every moment </p>
+        <div class="services-content">
+        
+            <div class="col">
+                <!-- start text -->
+                
+                 <div class="srv">
+                    <i class="fa-regular fa-message"></i>
+                    <div class="text">
+                        <h3>message for you</h3>
+                        <p>لقد قضينا القليل من اللحظات سويا و لكنها كانت تعني الكثير بالنسبة لي و سوف نعيش الكثير من اللحظات السعيدة و لكن في الوقت المناسب ليس مطلوب منا سوى العمل بالنسبة لي و الصبر بالنسبة لكي و الدعاء علي ان  تكوني الخير لي و ان منتي شر فالله قادر علي ان يجعل الخير فيكي كما اتمني</p>
+                    </div> 
+                 </div>
+                <!-- end text -->
+            </div>
+            <div class="col">
+                <div class="image image-column">
+                    <img src="imgs/GRaL7cTXYAAuMLO.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- moments end -->
+ <!-- start portfolio -->
+ <div class="portfolio" id="future">
+    <div class="container">
+        <h2 class="special-heading">future</h2>
+        <p>I'm trying to make our future better. </p>
+        <div class="portfolio-content">
+         <div class="card">
+            <img src="imgs/Media (1).jpg" alt="">
+            <div class="info">
+                <h3>future</h3>
+                <p>future with more than we hope for.</p>
+            </div>
+         </div>
+         <div class="card">
+            <img src="imgs/Media.jpg" alt="">
+            <div class="info">
+                <h3>future</h3>
+                <p>future with more than we hope for.</p>
+            </div>
+         </div>
+         <div class="card">
+            <img src="imgs/Media3.jpg" alt="">
+            <div class="info">
+                <h3>future</h3>
+                <p>future with more than we hope for.</p>
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- end portfolio -->
+ <!-- start about -->
+ <div class="about" id="Remeber">
+    <div class="container">
+        <h2 class="special-heading">remember</h2>
+        <p>I always with you </p>
+        <div class="about-content">
+         <div class="image">
+            <img src="imgs/Media4.jpg" alt="">
+         </div>
+        <div class="text">
+            <p>
+                ما بين الميم و الميم انا المأسور
+و الراء فيها تداوي ما بي من كسور
+يائوها مفتوحه كفتح كأس الزهور
+فهي شمسي و افراحي و هي قمري و اشواقي
+            </p>
+            
+            <hr>
+            <p>
+                you are perfect than you imagine
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
+ <!-- end about -->
+  <!-- start contact -->
+  <div class="contact" id="finally">
+    <div class="container">
+        <h2 class="special-heading">finally</h2>
+        <p>if you need me I'm here</p>
+    </div>
+  </div>  
+  <!-- end contact -->
+   <!-- start footer -->
+    <div class="footer">
+     for the fourth time, i love you</div>
+   <!-- end footer -->
+</body>
+</html>
