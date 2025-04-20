@@ -201,11 +201,11 @@ width: 100%;
     all: initial; */
 }
 
-.timer * {
+/* .timer * {
     all: unset;
     box-sizing: border-box;
     display: revert;
-}
+} */
 
 /* Custom timer styles */
 .timer {
@@ -219,6 +219,7 @@ width: 100%;
     margin: 0 !important;
     background-color: #f5f5f5 !important;
 }
+
 
 .special-heading-t {
     text-align: center !important;
@@ -277,9 +278,9 @@ width: 100%;
         font-size: 12px !important;
     }
     
-    .timer {
+    /* .timer {
         width: 410px !important;
-    }
+    } */
     
     .timer-t {
         width: 360px !important;
@@ -379,17 +380,17 @@ width: 100%;
     }
 }
 @media (max-width:767px){
-   .services{
+   /* .services{
     width: 386px;
     margin: -37px;
-   }
+   } */
     .services .services-content .srv{
         flex-direction: column;
         text-align: center;
         width: 400px;
     }
     .services .services-content .srv i{
-        margin-left: 60px;
+        margin-left: -46px;
         padding-top: 30px;
     }
     .services .services-content .srv .text p{
@@ -400,22 +401,22 @@ width: 100%;
       font-size: 20px;
      justify-content: center;
         text-align: center;
-        margin-left: -47px;
+        margin-left: -109px;
       
     }
     .services .services-content .srv .text h3{
         width: 330px;
         padding-left: 120px;
-        margin-left: -3px;
+        margin-left: -55px;
     }
     .special-heading-m{
         font-size: 60px;
-        margin-left: 90px;
+        margin-left: 0px;
     }
     .special-heading-m + p{
         margin-top: -20px;
         font-size: 12px;
-        margin-left: 110px;
+        margin-left: 15px;
     }
 }
 /* end moments */
