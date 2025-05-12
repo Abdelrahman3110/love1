@@ -366,6 +366,11 @@ ul{
     -o-transform: translateX(-50%);
     border-top-color: var(--main-color);
 }
+@media (max-width:767px) {
+    .days .container .box {
+        width: 310px;
+    }
+}
 /* end days */
 /* start timer */
 .timer{
@@ -426,7 +431,7 @@ ul{
        flex-wrap: wrap;
         max-width: 100%;
         height: 670px;
-        margin-top: -210px;
+        margin-top: -130px;
         padding-top: 252px;
     }
 }
@@ -678,7 +683,7 @@ ul{
         display: none;
     }
     .where .container .msg .image{
-        right: -30px;
+        right: -13px;
     position: relative;
     }
     .where .container .msg i{
@@ -803,7 +808,7 @@ ul{
     padding-top: 0;
     }
     .future .container .cards .card p{
-        left: 29px;
+        left: 6px;
     }
     .future .container .cards .sss p{
         top: 0;
@@ -911,11 +916,14 @@ ul{
         display: none;
     }
     .doa .container .g .image img {
-        width: 350px;
+        width: 287px;
         margin-top: -30px;
     }
      .doa .container .g .image:hover span{
     opacity: 0;
+     }
+     .doa .container .info h2{
+        font-size: 103px;
      }
 }
 /* end do3a */
@@ -1104,10 +1112,13 @@ ul{
         left: 0;
     }
     .remember .container .text .content hr{
-        width: 111%;
+        width: 100%;
     }
     .remember .container .text .card {
     height: 425px;
+    }
+    .remember .container .text .card .card-inner .card-back {
+      height: 94%;
     }
 }
 /* end remember */
@@ -1213,8 +1224,8 @@ ul{
     }
     .moments .container .memo .text p{
         padding-top: 35px;
-        font-size: 29px;
-        width: 345px;
+        font-size: 24px;
+        width: 318px;
     }
     .moments .container .memo .image {
     padding-top: 40px;
@@ -1348,11 +1359,24 @@ ul{
         margin-top: -23px;
     }
     .finally .container{
-        padding-bottom: 70px;
+        padding-bottom: 5px;
     }
-      .finally .container .cards .card-3{
-        height: 1060px;
-      }
+    .finally .container .cards .card{
+        height: 600px;
+    }
+    .finally .container .cards .card-3{
+      height: 1170px;
+  }
+      .finally .container .cards .card ul li {
+    text-align: right;
+    padding: 18px;
+    position: relative;
+    font-family: "Rakkas", sans-serif;
+    font-size: 26px;
+    color: #797979;
+    right: 8px;
+    width: 308px;
+    }
 }
 /* end finally */
 /* start contact */
@@ -1390,7 +1414,7 @@ ul{
 }
 @media (max-width:767px) {
     .contact .container .info h2{
-        font-size: 57px;
+        font-size: 47px;
      
     }
    .contact .container .info p{
@@ -1413,3 +1437,5 @@ ul{
     color: var(--main-color);
 }
 /* end footer */
+/* made with love */
+/* the end of site */
